@@ -2,7 +2,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
-
+app.get('/', (req, res) => {
+  res.send("Bajaj Finserv Health API is running. Use POST /bfhl to test.");
+});
+app.get('/bfhl', (req, res) => {
+  res.status(200).json({
+    operation_code: 1,
+    message: "BFHL API is up and running. Use POST /bfhl with data."
+  });
+});
 app.post('/bfhl', (req, res) => {
     try {
         const data = req.body.data;
