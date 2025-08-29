@@ -22,6 +22,6 @@ Implements the requirements for the **Full Stack Question Paper – VIT**.
 
 ## 📦 Installation
 ```bash
-git clone https://github.com/your-username/bfhl-api.git
+git clone https://github.com/Coder-Aman-Sahu/bfhl-api.git
 cd bfhl-api
 npm install
